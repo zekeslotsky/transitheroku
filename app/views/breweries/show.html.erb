@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @brewery.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @brewery.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @brewery.city %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @brewery.zip %>
+</p>
+
+<p>
+  <strong>Transit:</strong>
+  <%= @brewery.transit %>
+</p>
+
+<p>
+  <strong>Ga direction:</strong>
+  <%= @brewery.ga_direction %>
+</p>
+
+<p>
+  <strong>Style:</strong>
+  <%= @brewery.style %>
+</p>
+
+<p>
+  <strong>Beer1:</strong>
+  <%= @brewery.beer1 %>
+</p>
+
+<p>
+  <strong>Beer2:</strong>
+  <%= @brewery.beer2 %>
+</p>
+
+<p>
+  <strong>Beer3:</strong>
+  <%= @brewery.beer3 %>
+</p>
+
+<p>
+  <strong>Generic growlers:</strong>
+  <%= @brewery.generic_growlers %>
+</p>
+
+<%= link_to 'Edit', edit_brewery_path(@brewery) %> |
+<%= link_to 'Back', breweries_path %>

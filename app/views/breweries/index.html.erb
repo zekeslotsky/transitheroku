@@ -1,0 +1,49 @@
+<div class="container">
+<h1>Listing breweries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>Zip</th>
+      <th>Transit</th>
+      <th>Ga direction</th>
+      <th>Style</th>
+      <th>Beer1</th>
+      <th>Beer2</th>
+      <th>Beer3</th>
+      <th>Generic growlers</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @breweries.each do |brewery| %>
+      <tr>
+        <td><%= brewery.name %></td>
+        <td><%= brewery.address %></td>
+        <td><%= brewery.city %></td>
+        <td><%= brewery.zip %></td>
+        <td><%= brewery.transit %></td>
+        <td><%= brewery.ga_direction %></td>
+        <td><%= brewery.style %></td>
+        <td><%= brewery.beer1 %></td>
+        <td><%= brewery.beer2 %></td>
+        <td><%= brewery.beer3 %></td>
+        <td><%= brewery.generic_growlers %></td>
+        <td><%= link_to 'Show', brewery %></td>
+        <td><%= link_to 'Edit', edit_brewery_path(brewery) %></td>
+        <td><%= link_to 'Destroy', brewery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Brewery', new_brewery_path %>
+</div>
